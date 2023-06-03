@@ -1,6 +1,6 @@
-# myofibril_flutter
+# MyoFibril: Flutter App
 
-A new Flutter project.
+A flutter app designed to integrate weightlifting data into Strava.
 
 ## Getting Started
 

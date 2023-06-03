@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myofibril_flutter/src/auth/auth_connect_view.dart';
+import 'package:myofibril_flutter/src/profile/profile_view.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -13,16 +13,11 @@ class HomeView extends StatelessWidget {
           IconButton(
               icon: const Icon(Icons.person),
               onPressed: () {
-                Navigator.restorablePushNamed(
-                    context, AuthConnectView.routeName);
+                Navigator.restorablePushNamed(context, ProfileView.routeName);
               })
         ],
       ),
-      body: const Center(
-        child: Image(
-            image:
-                AssetImage('images/brands/btn_strava_connectwith_light.png')),
-      ),
+      body: const Center(),
     );
   }
 }

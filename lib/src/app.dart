@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:myofibril_flutter/src/auth/auth_connect_view.dart';
+import 'package:myofibril_flutter/src/profile/profile_view.dart';
 import 'package:myofibril_flutter/src/home/home_view.dart';
 
 import 'sample_feature/sample_item_details_view.dart';
@@ -75,8 +75,8 @@ class MyApp extends StatelessWidget {
                     return const SampleItemDetailsView();
                   case SampleItemListView.routeName:
                     return const SampleItemListView();
-                  case AuthConnectView.routeName:
-                    return const AuthConnectView();
+                  case ProfileView.routeName:
+                    return const ProfileView();
                   case HomeView.routeName:
                   default:
                     return const HomeView();

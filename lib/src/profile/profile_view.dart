@@ -7,14 +7,21 @@ class ProfileView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const connectWithStravaImagePath =
-        'assets/images/brands/btn_strava_connectwith_light.png';
+        'assets/images/brands/btn_strava_connectwith_orange.png';
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Profile'),
-      ),
-      body: const Center(
-        child: Image(image: AssetImage(connectWithStravaImagePath)),
-      ),
-    );
+        appBar: AppBar(
+          title: const Text('Profile'),
+        ),
+        body: Center(
+            child: GestureDetector(
+                child: Container(
+                    width: 200,
+                    height: 50,
+                    decoration: const BoxDecoration(
+                        color: Colors.black,
+                        image: DecorationImage(
+                            image: AssetImage(connectWithStravaImagePath),
+                            fit: BoxFit.cover))),
+                onTap: () {})));
   }
 }
